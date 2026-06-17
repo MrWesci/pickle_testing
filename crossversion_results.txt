@@ -1,0 +1,43 @@
+======================================================================
+CROSS-VERSION PICKLE STABILITY REPORT
+======================================================================
+
+Versions compared:
+  Python 3.13.1
+    Default protocol : 4
+    Highest protocol : 5
+  Python 3.14.0
+    Default protocol : 5
+    Highest protocol : 5
+  Python 3.9.13
+    Default protocol : 4
+    Highest protocol : 5
+
+Total test cases : 360
+Stable           : 359  (99%)
+UNSTABLE         : 1  (0%)
+Errors           : 0
+
+======================================================================
+UNSTABLE TEST CASES (hash differs across versions)
+======================================================================
+
+  [PROTO_5]
+    bytearray_simple
+      Python 3.13.1: 268be365b82d9cc8386800b34d26b9b91f93f0babf95e3d647625c105c78ded4
+      Python 3.14.0: 268be365b82d9cc8386800b34d26b9b91f93f0babf95e3d647625c105c78ded4
+      Python 3.9.13: 77f38e29798d45fccc3f54cfe38df766bedbb808efd6746bc9970f6cbdc09400
+
+======================================================================
+NOTE ON DEFAULT PROTOCOL
+======================================================================
+WARNING: Default protocol differs across versions!
+  Python 3.13.1: default protocol = 4
+  Python 3.14.0: default protocol = 5
+  Python 3.9.13: default protocol = 4
+
+This means pickle.dumps(obj) with NO protocol argument
+will produce DIFFERENT bytes on different Python versions.
+Always specify protocol explicitly to ensure stability.
+
+Report complete.

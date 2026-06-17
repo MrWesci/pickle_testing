@@ -1,0 +1,114 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.0, pytest-9.0.3, pluggy-1.6.0 -- C:\Python314\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\moota\Desktop\SWTest Final
+collecting ... collected 88 items
+
+test_pickle_whitebox.py::TestSaveLongBranches::test_B1_binint1_255 PASSED [  1%]
+test_pickle_whitebox.py::TestSaveLongBranches::test_B1_binint1_zero PASSED [  2%]
+test_pickle_whitebox.py::TestSaveLongBranches::test_B2_binint2_256 PASSED [  3%]
+test_pickle_whitebox.py::TestSaveLongBranches::test_B2_binint2_65535 PASSED [  4%]
+test_pickle_whitebox.py::TestSaveLongBranches::test_B3_binint_max_int32 PASSED [  5%]
+test_pickle_whitebox.py::TestSaveLongBranches::test_B3_binint_min_int32 PASSED [  6%]
+test_pickle_whitebox.py::TestSaveLongBranches::test_B3_binint_negative PASSED [  7%]
+test_pickle_whitebox.py::TestSaveLongBranches::test_B3_binint_positive_large PASSED [  9%]
+test_pickle_whitebox.py::TestSaveLongBranches::test_B4_long1_just_over_int32 PASSED [ 10%]
+test_pickle_whitebox.py::TestSaveLongBranches::test_B4_long1_large_negative PASSED [ 11%]
+test_pickle_whitebox.py::TestSaveLongBranches::test_B5_long4_huge_int PASSED [ 12%]
+test_pickle_whitebox.py::TestSaveLongBranches::test_B6_proto0_int_text PASSED [ 13%]
+test_pickle_whitebox.py::TestSaveLongBranches::test_B6_proto0_negative_text PASSED [ 14%]
+test_pickle_whitebox.py::TestSaveLongBranches::test_B7_proto0_long_text PASSED [ 15%]
+test_pickle_whitebox.py::TestSaveBoolBranches::test_B1_newfalse_proto2 PASSED [ 17%]
+test_pickle_whitebox.py::TestSaveBoolBranches::test_B1_newtrue_proto2 PASSED [ 18%]
+test_pickle_whitebox.py::TestSaveBoolBranches::test_B2_false_proto0 PASSED [ 19%]
+test_pickle_whitebox.py::TestSaveBoolBranches::test_B2_true_proto0 PASSED [ 20%]
+test_pickle_whitebox.py::TestSaveBoolBranches::test_bool_type_preserved_all_protocols 
+test_pickle_whitebox.py::TestSaveBoolBranches::test_bool_type_preserved_all_protocols PASSED [ 21%]
+test_pickle_whitebox.py::TestSaveFloatBranches::test_B1_binfloat_proto2 PASSED [ 22%]
+test_pickle_whitebox.py::TestSaveFloatBranches::test_B2_float_text_proto0 PASSED [ 23%]
+test_pickle_whitebox.py::TestSaveFloatBranches::test_float_inf_both_modes 
+test_pickle_whitebox.py::TestSaveFloatBranches::test_float_inf_both_modes PASSED [ 25%]
+test_pickle_whitebox.py::TestSaveFloatBranches::test_float_nan_both_modes 
+test_pickle_whitebox.py::TestSaveFloatBranches::test_float_nan_both_modes PASSED [ 26%]
+test_pickle_whitebox.py::TestSaveFloatBranches::test_negative_zero_preserved 
+test_pickle_whitebox.py::TestSaveFloatBranches::test_negative_zero_preserved PASSED [ 27%]
+test_pickle_whitebox.py::TestSaveBytesBranches::test_B1_proto0_empty_bytes PASSED [ 28%]
+test_pickle_whitebox.py::TestSaveBytesBranches::test_B1_proto0_nonempty_bytes PASSED [ 29%]
+test_pickle_whitebox.py::TestSaveBytesBranches::test_B2_short_binbytes_boundary_1byte PASSED [ 30%]
+test_pickle_whitebox.py::TestSaveBytesBranches::test_B2_short_binbytes_proto3 PASSED [ 31%]
+test_pickle_whitebox.py::TestSaveBytesBranches::test_B4_large_bytes_at_frame_target PASSED [ 32%]
+test_pickle_whitebox.py::TestSaveBytesBranches::test_B5_binbytes_256_to_framesize PASSED [ 34%]
+test_pickle_whitebox.py::TestSaveBytesBranches::test_bytes_all_256_values_round_trip 
+test_pickle_whitebox.py::TestSaveBytesBranches::test_bytes_all_256_values_round_trip PASSED [ 35%]
+test_pickle_whitebox.py::TestSaveByteArrayBranches::test_B1_proto4_empty_bytearray PASSED [ 36%]
+test_pickle_whitebox.py::TestSaveByteArrayBranches::test_B2_proto4_nonempty_bytearray PASSED [ 37%]
+test_pickle_whitebox.py::TestSaveByteArrayBranches::test_B3_proto5_bytearray8_opcode PASSED [ 38%]
+test_pickle_whitebox.py::TestSaveByteArrayBranches::test_B3_proto5_empty_bytearray PASSED [ 39%]
+test_pickle_whitebox.py::TestSaveStrBranches::test_B1_short_binunicode_255_utf8_bytes PASSED [ 40%]
+test_pickle_whitebox.py::TestSaveStrBranches::test_B1_short_binunicode_proto4 PASSED [ 42%]
+test_pickle_whitebox.py::TestSaveStrBranches::test_B3_large_string_frame_target PASSED [ 43%]
+test_pickle_whitebox.py::TestSaveStrBranches::test_B4_binunicode_256_bytes_proto2 PASSED [ 44%]
+test_pickle_whitebox.py::TestSaveStrBranches::test_B4_binunicode_256_bytes_proto4 PASSED [ 45%]
+test_pickle_whitebox.py::TestSaveStrBranches::test_B5_proto0_escape_backslash PASSED [ 46%]
+test_pickle_whitebox.py::TestSaveStrBranches::test_B5_proto0_escape_newline PASSED [ 47%]
+test_pickle_whitebox.py::TestSaveStrBranches::test_B5_proto0_escape_null PASSED [ 48%]
+test_pickle_whitebox.py::TestSaveStrBranches::test_B5_unicode_text_proto0 PASSED [ 50%]
+test_pickle_whitebox.py::TestSaveTupleBranches::test_B1_empty_tuple_proto2 PASSED [ 51%]
+test_pickle_whitebox.py::TestSaveTupleBranches::test_B2_empty_tuple_proto0 PASSED [ 52%]
+test_pickle_whitebox.py::TestSaveTupleBranches::test_B3_tuple1_proto2 PASSED [ 53%]
+test_pickle_whitebox.py::TestSaveTupleBranches::test_B3_tuple2_proto2 PASSED [ 54%]
+test_pickle_whitebox.py::TestSaveTupleBranches::test_B3_tuple3_proto2 PASSED [ 55%]
+test_pickle_whitebox.py::TestSaveTupleBranches::test_B4_four_element_tuple_proto2 PASSED [ 56%]
+test_pickle_whitebox.py::TestSaveTupleBranches::test_B4_three_element_proto1 PASSED [ 57%]
+test_pickle_whitebox.py::TestSaveTupleBranches::test_nested_tuples_all_sizes 
+test_pickle_whitebox.py::TestSaveTupleBranches::test_nested_tuples_all_sizes PASSED [ 59%]
+test_pickle_whitebox.py::TestSaveListBranches::test_B1_proto0_list_opcode PASSED [ 60%]
+test_pickle_whitebox.py::TestSaveListBranches::test_B2_proto2_empty_list_opcode PASSED [ 61%]
+test_pickle_whitebox.py::TestSaveListBranches::test_B3_proto0_individual_appends PASSED [ 62%]
+test_pickle_whitebox.py::TestSaveListBranches::test_B4_proto2_appends_batch PASSED [ 63%]
+test_pickle_whitebox.py::TestSaveListBranches::test_B5_single_item_append PASSED [ 64%]
+test_pickle_whitebox.py::TestSaveListBranches::test_B6_exactly_1000_items 
+test_pickle_whitebox.py::TestSaveListBranches::test_B6_exactly_1000_items PASSED [ 65%]
+test_pickle_whitebox.py::TestSaveListBranches::test_B6_exactly_2000_items PASSED [ 67%]
+test_pickle_whitebox.py::TestSaveListBranches::test_B6_over_batchsize_1001_items 
+test_pickle_whitebox.py::TestSaveListBranches::test_B6_over_batchsize_1001_items PASSED [ 68%]
+test_pickle_whitebox.py::TestSaveDictBranches::test_B1_proto0_dict_opcode PASSED [ 69%]
+test_pickle_whitebox.py::TestSaveDictBranches::test_B2_proto2_empty_dict_opcode PASSED [ 70%]
+test_pickle_whitebox.py::TestSaveDictBranches::test_B3_proto0_individual_setitems PASSED [ 71%]
+test_pickle_whitebox.py::TestSaveDictBranches::test_B4_proto2_setitems_batch PASSED [ 72%]
+test_pickle_whitebox.py::TestSaveDictBranches::test_B5_single_item_setitem PASSED [ 73%]
+test_pickle_whitebox.py::TestSaveDictBranches::test_B6_over_batchsize_1001_pairs 
+test_pickle_whitebox.py::TestSaveDictBranches::test_B6_over_batchsize_1001_pairs PASSED [ 75%]
+test_pickle_whitebox.py::TestMemoizeBranches::test_B1_memoize_proto4 PASSED [ 76%]
+test_pickle_whitebox.py::TestMemoizeBranches::test_B2_binput_proto2_small_index PASSED [ 77%]
+test_pickle_whitebox.py::TestMemoizeBranches::test_B3_long_binput_proto2_index_256 PASSED [ 78%]
+test_pickle_whitebox.py::TestMemoizeBranches::test_B4_put_text_proto0 PASSED [ 79%]
+test_pickle_whitebox.py::TestMemoizeBranches::test_shared_reference_memoized 
+test_pickle_whitebox.py::TestMemoizeBranches::test_shared_reference_memoized PASSED [ 80%]
+test_pickle_whitebox.py::TestEncodeLong::test_decode_empty_is_zero PASSED [ 81%]
+test_pickle_whitebox.py::TestEncodeLong::test_decode_known_values 
+test_pickle_whitebox.py::TestEncodeLong::test_decode_known_values PASSED [ 82%]
+test_pickle_whitebox.py::TestEncodeLong::test_encode_known_values 
+test_pickle_whitebox.py::TestEncodeLong::test_encode_known_values PASSED [ 84%]
+test_pickle_whitebox.py::TestEncodeLong::test_negative_trim_branch PASSED [ 85%]
+test_pickle_whitebox.py::TestEncodeLong::test_roundtrip_large_negative PASSED [ 86%]
+test_pickle_whitebox.py::TestEncodeLong::test_roundtrip_large_positive PASSED [ 87%]
+test_pickle_whitebox.py::TestEncodeLong::test_zero_returns_empty PASSED  [ 88%]
+test_pickle_whitebox.py::TestPicklerInitBranches::test_any_negative_protocol_uses_highest 
+test_pickle_whitebox.py::TestPicklerInitBranches::test_any_negative_protocol_uses_highest PASSED [ 89%]
+test_pickle_whitebox.py::TestPicklerInitBranches::test_invalid_protocol_raises PASSED [ 90%]
+test_pickle_whitebox.py::TestPicklerInitBranches::test_negative_protocol_uses_highest PASSED [ 92%]
+test_pickle_whitebox.py::TestPicklerInitBranches::test_none_protocol_uses_default PASSED [ 93%]
+test_pickle_whitebox.py::TestPicklerInitBranches::test_valid_protocol_range 
+test_pickle_whitebox.py::TestPicklerInitBranches::test_valid_protocol_range PASSED [ 94%]
+test_pickle_whitebox.py::TestMemoPaths::test_fast_mode_skips_memo PASSED [ 95%]
+test_pickle_whitebox.py::TestMemoPaths::test_shared_dict_identity 
+test_pickle_whitebox.py::TestMemoPaths::test_shared_dict_identity PASSED [ 96%]
+test_pickle_whitebox.py::TestMemoPaths::test_shared_list_identity 
+test_pickle_whitebox.py::TestMemoPaths::test_shared_list_identity PASSED [ 97%]
+test_pickle_whitebox.py::TestMemoPaths::test_shared_string_memoized 
+test_pickle_whitebox.py::TestMemoPaths::test_shared_string_memoized PASSED [ 98%]
+test_pickle_whitebox.py::TestHashIdentityPerOpcodePath::test_all_paths_hash_identical 
+test_pickle_whitebox.py::TestHashIdentityPerOpcodePath::test_all_paths_hash_identical PASSED [100%]
+
+=================== 88 passed, 114 subtests passed in 0.21s ===================

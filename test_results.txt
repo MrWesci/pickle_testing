@@ -1,0 +1,95 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.0, pytest-9.0.3, pluggy-1.6.0 -- C:\Python314\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\moota\Desktop\SWTest Final
+collecting ... collected 76 items
+
+test_pickle_blackbox.py::TestEPIntegers::test_bool_false PASSED          [  1%]
+test_pickle_blackbox.py::TestEPIntegers::test_bool_true PASSED           [  2%]
+test_pickle_blackbox.py::TestEPIntegers::test_large_int PASSED           [  3%]
+test_pickle_blackbox.py::TestEPIntegers::test_negative PASSED            [  5%]
+test_pickle_blackbox.py::TestEPIntegers::test_positive_small PASSED      [  6%]
+test_pickle_blackbox.py::TestEPIntegers::test_zero PASSED                [  7%]
+test_pickle_blackbox.py::TestEPStrings::test_ascii_string PASSED         [  9%]
+test_pickle_blackbox.py::TestEPStrings::test_empty_string PASSED         [ 10%]
+test_pickle_blackbox.py::TestEPStrings::test_long_string PASSED          [ 11%]
+test_pickle_blackbox.py::TestEPStrings::test_string_with_newlines PASSED [ 13%]
+test_pickle_blackbox.py::TestEPStrings::test_string_with_null_bytes PASSED [ 14%]
+test_pickle_blackbox.py::TestEPStrings::test_unicode_string PASSED       [ 15%]
+test_pickle_blackbox.py::TestEPFloats::test_nan_stability PASSED         [ 17%]
+test_pickle_blackbox.py::TestEPFloats::test_negative_infinity PASSED     [ 18%]
+test_pickle_blackbox.py::TestEPFloats::test_negative_zero PASSED         [ 19%]
+test_pickle_blackbox.py::TestEPFloats::test_normal_float PASSED          [ 21%]
+test_pickle_blackbox.py::TestEPFloats::test_positive_infinity PASSED     [ 22%]
+test_pickle_blackbox.py::TestEPFloats::test_very_large_float PASSED      [ 23%]
+test_pickle_blackbox.py::TestEPFloats::test_very_small_float PASSED      [ 25%]
+test_pickle_blackbox.py::TestEPFloats::test_zero_float PASSED            [ 26%]
+test_pickle_blackbox.py::TestEPNoneAndBytes::test_binary_bytes PASSED    [ 27%]
+test_pickle_blackbox.py::TestEPNoneAndBytes::test_empty_bytes PASSED     [ 28%]
+test_pickle_blackbox.py::TestEPNoneAndBytes::test_none PASSED            [ 30%]
+test_pickle_blackbox.py::TestEPCollections::test_empty_dict PASSED       [ 31%]
+test_pickle_blackbox.py::TestEPCollections::test_empty_list PASSED       [ 32%]
+test_pickle_blackbox.py::TestEPCollections::test_empty_set PASSED        [ 34%]
+test_pickle_blackbox.py::TestEPCollections::test_empty_tuple PASSED      [ 35%]
+test_pickle_blackbox.py::TestEPCollections::test_frozenset PASSED        [ 36%]
+test_pickle_blackbox.py::TestEPCollections::test_homogeneous_list PASSED [ 38%]
+test_pickle_blackbox.py::TestEPCollections::test_mixed_list PASSED       [ 39%]
+test_pickle_blackbox.py::TestEPCollections::test_nested_dict PASSED      [ 40%]
+test_pickle_blackbox.py::TestEPCollections::test_nested_list PASSED      [ 42%]
+test_pickle_blackbox.py::TestEPCollections::test_nested_tuple PASSED     [ 43%]
+test_pickle_blackbox.py::TestEPCollections::test_simple_dict PASSED      [ 44%]
+test_pickle_blackbox.py::TestEPCollections::test_singleton_tuple PASSED  [ 46%]
+test_pickle_blackbox.py::TestBVAIntegers::test_all_boundaries_round_trip 
+test_pickle_blackbox.py::TestBVAIntegers::test_all_boundaries_round_trip PASSED [ 47%]
+test_pickle_blackbox.py::TestBVAIntegers::test_all_boundaries_stable 
+test_pickle_blackbox.py::TestBVAIntegers::test_all_boundaries_stable PASSED [ 48%]
+test_pickle_blackbox.py::TestBVAIntegers::test_negative_boundaries 
+test_pickle_blackbox.py::TestBVAIntegers::test_negative_boundaries PASSED [ 50%]
+test_pickle_blackbox.py::TestBVAStrings::test_length_255 PASSED          [ 51%]
+test_pickle_blackbox.py::TestBVAStrings::test_length_256 PASSED          [ 52%]
+test_pickle_blackbox.py::TestBVAStrings::test_length_65535 PASSED        [ 53%]
+test_pickle_blackbox.py::TestBVAStrings::test_length_65536 PASSED        [ 55%]
+test_pickle_blackbox.py::TestBVAStrings::test_length_one PASSED          [ 56%]
+test_pickle_blackbox.py::TestBVAStrings::test_length_zero PASSED         [ 57%]
+test_pickle_blackbox.py::TestBVACollections::test_deeply_nested_list PASSED [ 59%]
+test_pickle_blackbox.py::TestBVACollections::test_dict_many_keys PASSED  [ 60%]
+test_pickle_blackbox.py::TestBVACollections::test_list_length_255 PASSED [ 61%]
+test_pickle_blackbox.py::TestBVACollections::test_list_length_256 PASSED [ 63%]
+test_pickle_blackbox.py::TestBVACollections::test_list_length_one PASSED [ 64%]
+test_pickle_blackbox.py::TestBVACollections::test_list_length_zero PASSED [ 65%]
+test_pickle_blackbox.py::TestProtocolVersions::test_cross_protocol_correctness PASSED [ 67%]
+test_pickle_blackbox.py::TestProtocolVersions::test_each_protocol_round_trips 
+test_pickle_blackbox.py::TestProtocolVersions::test_each_protocol_round_trips PASSED [ 68%]
+test_pickle_blackbox.py::TestProtocolVersions::test_each_protocol_stable 
+test_pickle_blackbox.py::TestProtocolVersions::test_each_protocol_stable PASSED [ 69%]
+test_pickle_blackbox.py::TestRecursiveStructures::test_mutually_referential PASSED [ 71%]
+test_pickle_blackbox.py::TestRecursiveStructures::test_recursive_stability PASSED [ 72%]
+test_pickle_blackbox.py::TestRecursiveStructures::test_self_referential_dict PASSED [ 73%]
+test_pickle_blackbox.py::TestRecursiveStructures::test_self_referential_list PASSED [ 75%]
+test_pickle_blackbox.py::TestFuzzing::test_fuzz_integers_stable 
+test_pickle_blackbox.py::TestFuzzing::test_fuzz_integers_stable PASSED   [ 76%]
+test_pickle_blackbox.py::TestFuzzing::test_fuzz_mixed_dicts 
+test_pickle_blackbox.py::TestFuzzing::test_fuzz_mixed_dicts PASSED       [ 77%]
+test_pickle_blackbox.py::TestFuzzing::test_fuzz_nested_lists_stable 
+test_pickle_blackbox.py::TestFuzzing::test_fuzz_nested_lists_stable PASSED [ 78%]
+test_pickle_blackbox.py::TestFuzzing::test_fuzz_strings_stable 
+test_pickle_blackbox.py::TestFuzzing::test_fuzz_strings_stable PASSED    [ 80%]
+test_pickle_blackbox.py::TestEdgeCases::test_bytearray PASSED            [ 81%]
+test_pickle_blackbox.py::TestEdgeCases::test_complex_number PASSED       [ 82%]
+test_pickle_blackbox.py::TestEdgeCases::test_ellipsis PASSED             [ 84%]
+test_pickle_blackbox.py::TestEdgeCases::test_empty_bytes_vs_empty_string PASSED [ 85%]
+test_pickle_blackbox.py::TestEdgeCases::test_int_vs_bool_distinction PASSED [ 86%]
+test_pickle_blackbox.py::TestEdgeCases::test_large_dict_key_variety PASSED [ 88%]
+test_pickle_blackbox.py::TestEdgeCases::test_range_object PASSED         [ 89%]
+test_pickle_blackbox.py::TestEdgeCases::test_very_long_bytes PASSED      [ 90%]
+test_pickle_blackbox.py::TestEdgeCases::test_whitespace_only_string 
+test_pickle_blackbox.py::TestEdgeCases::test_whitespace_only_string PASSED [ 92%]
+test_pickle_blackbox.py::TestHashIdentity::test_hash_all_protocols 
+test_pickle_blackbox.py::TestHashIdentity::test_hash_all_protocols PASSED [ 93%]
+test_pickle_blackbox.py::TestHashIdentity::test_hash_dict PASSED         [ 94%]
+test_pickle_blackbox.py::TestHashIdentity::test_hash_int PASSED          [ 96%]
+test_pickle_blackbox.py::TestHashIdentity::test_hash_list PASSED         [ 97%]
+test_pickle_blackbox.py::TestHashIdentity::test_hash_nested PASSED       [ 98%]
+test_pickle_blackbox.py::TestHashIdentity::test_hash_string PASSED       [100%]
+
+=================== 76 passed, 371 subtests passed in 0.16s ===================
